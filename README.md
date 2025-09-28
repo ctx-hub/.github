@@ -1,26 +1,31 @@
-# 🏛️ ctx-hub/.github
+# .github
+
+> Organization-wide configuration for **ctx-hub**.
 
 ## 📌 Overview
-This repository contains **organization-wide configuration** for the `ctx-hub` GitHub organization.  
-It centralizes **templates, workflows, and policies** that are automatically applied to all repositories.
+This repo contains reusable GitHub-wide configuration files such as issue templates, PR templates, workflows, and community health files.
 
-## ⚙️ What’s inside?
-- **Issue & PR Templates** → Standardized templates for pull requests and issues.  
-- **Workflows (CI/CD):**  
-  - `pr-guard-soft.yml`: Lightweight PR guard to check PR context.  
-  - `pr-codeowners-soft.yml`: Ensures code ownership rules are visible (non-blocking).  
-  - `add-to-project.yml`: Auto-assign PRs/issues to org-level project boards.  
-  - `ci-links.yml`, `ci-lint.yml`: Standard linting and metadata checks.  
-- **CODEOWNERS** → Shared code ownership rules across repos.
+## 🛠️ Inside
+- `.github/ISSUE_TEMPLATE/`
+- `.github/PULL_REQUEST_TEMPLATE/`
+- `.github/workflows/`
 
 ## 🚀 Usage
-This repository works automatically:  
-- GitHub applies templates and workflows to all repositories under `ctx-hub`.  
-- No manual installation needed.
+All repositories under **ctx-hub** automatically inherit these defaults.
 
-## 🛠️ Maintenance
-- Keep workflows/templates consistent with all repos.  
-- Update CODEOWNERS when ownership changes.  
+## 📊 Badges
+![CI Status](https://img.shields.io/github/actions/workflow/status/ctx-hub/.github/ci.yml?branch=main)
+![License](https://img.shields.io/github/license/ctx-hub/.github)
+![Issues](https://img.shields.io/github/issues/ctx-hub/.github)
 
-## 📜 License
-MIT License
+## 🔗 Related Repos
+- [ctx-meta](https://github.com/ctx-hub/ctx-meta) — meta config & coordination
+- [personal-labs](https://github.com/ctx-hub/personal-labs)
+- [freelans-tracker](https://github.com/ctx-hub/freelans-tracker)
+- [idea-vault](https://github.com/ctx-hub/idea-vault)
+
+## 🧑‍💻 Maintenance
+Maintained by org admins.
+
+## 📄 License
+MIT
