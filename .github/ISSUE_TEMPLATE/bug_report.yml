@@ -1,0 +1,11 @@
+name: Bug report
+description: Problem bildirin
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Nə baş verdi?
+      placeholder: Addımlar və gözlənilən nəticə
+    validations:
+      required: true

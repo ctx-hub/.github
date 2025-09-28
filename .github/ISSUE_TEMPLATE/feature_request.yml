@@ -1,0 +1,12 @@
+name: Feature request
+description: Funksiya təklifi
+labels: [enhancement]
+body:
+  - type: textarea
+    id: why
+    attributes:
+      label: Niyə lazımdır?
+      placeholder: Motivasiya və biznes dəyəri
+      description: Nəticə necə ölçüləcək?
+    validations:
+      required: true
