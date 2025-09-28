@@ -6,7 +6,14 @@ body:
     id: why
     attributes:
       label: Niyə lazımdır?
-      placeholder: Motivasiya və biznes dəyəri
       description: Nəticə necə ölçüləcək?
+      placeholder: Motivasiya və ölçülə bilən nəticə
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Təklif olunan həll
+      placeholder: Yaklaşım, təsvir, qəbul meyarları
     validations:
       required: true
