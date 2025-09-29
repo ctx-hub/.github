@@ -1,11 +1,103 @@
-name: Bug report
-description: Problem bildirin
-labels: [bug]
+---
+name: 🐛 Bug Report
+description: Create a detailed bug report to help us improve
+title: "[BUG] "
+labels: ["type:bug", "needs-triage", "ctx-hub"]
 body:
-  - type: textarea
-    id: what
+  - type: markdown
     attributes:
-      label: Nə baş verdi?
-      placeholder: Addımlar və gözlənilən nəticə
+      value: |
+        ## 🐛 Bug Report
+        
+        Thank you for helping improve ctx-hub! Please provide detailed information.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 📋 Pre-submission Checklist
+      options:
+        - label: I searched existing issues (no duplicates)
+          required: true
+        - label: I can reproduce with latest version
+          required: true
+        - label: I checked documentation
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 🏷️ Version
+      description: Which version are you using?
+      placeholder: "e.g., v2.1.0, commit sha, latest"
     validations:
       required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🐛 Bug Description
+      description: Clear and concise description of the bug
+      placeholder: "Describe what happened..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔄 Reproduction Steps
+      description: Step-by-step instructions to reproduce
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Expected Behavior
+      placeholder: "What should have happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🌍 Environment
+      description: Your system environment
+      placeholder: |
+        - OS: [e.g. Ubuntu 22.04, Windows 11, macOS 13.0]
+        - Browser: [e.g. Chrome 108, Firefox 107]
+        - Node.js: [e.g. 18.12.1] 
+        - Python: [e.g. 3.11.0]
+        - Docker: [e.g. 20.10.21]
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 📊 Severity
+      options:
+        - 🟢 Low - Minor issue, workaround exists
+        - 🟡 Medium - Functionality affected, no workaround
+        - 🟠 High - Major functionality broken
+        - 🔴 Critical - System unusable, data loss
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 Logs & Screenshots
+      description: Relevant logs, error messages, or screenshots
+      placeholder: "Paste logs or drag & drop screenshots..."
+
+  - type: checkboxes
+    id: additional
+    attributes:
+      label: 🎯 Additional Information
+      options:
+        - label: I'm willing to submit a PR for this
+        - label: This affects multiple users  
+        - label: This is a regression
+        - label: Security implications present
